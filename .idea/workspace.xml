@@ -9,11 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Commit Inicial, still without bugs XD" />
+    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="&#10;README.md - Student name and image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
@@ -161,6 +171,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="&#10;README.md - Student name and image" />
       <created>1759499155436</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -198,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759526376565</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&#10;README.md - Student name and image">
+      <option name="closed" value="true" />
+      <created>1759527897879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759527897879</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&#10;README.md - Student name and image">
+      <option name="closed" value="true" />
+      <created>1759528600092</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759528600092</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +243,8 @@
     <MESSAGE value="Commit Inicial, still without bugs XD" />
     <MESSAGE value="README.md - Student name and image" />
     <MESSAGE value="README.md - Student name and image - image" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md - Student name and image - image" />
+    <MESSAGE value="&#10;README.md - Student name and image" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;README.md - Student name and image" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

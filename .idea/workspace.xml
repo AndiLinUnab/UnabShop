@@ -9,10 +9,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="First Screens of mobile apps">
+    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Setup Navigation">
+      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/NavigationApp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/Validations.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/HomeScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/LoginScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/LoginScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/RegisterScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/RegisterScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +102,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/USUARIO/AndroidStudioProjects/UnabShop/app/src/main/res/drawable",
+    "last_opened_file_path": "C:/Users/USUARIO/AndroidStudioProjects/UnabShop/app/src/main/java/me/andilin/unabshop",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -110,8 +118,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\USUARIO\AndroidStudioProjects\UnabShop\app\src\main\res\drawable" />
       <recent name="C:\Users\USUARIO\AndroidStudioProjects\UnabShop\app\src\main\java\me\andilin\unabshop" />
+      <recent name="C:\Users\USUARIO\AndroidStudioProjects\UnabShop\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\AndroidStudioProjects\UnabShop\app" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="me.andilin.unabshop" />
     </key>
   </component>
   <component name="RunManager">
@@ -268,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760536756017</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Setup Navigation">
+      <option name="closed" value="true" />
+      <created>1760540220166</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760540220166</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,7 +311,8 @@
     <MESSAGE value="&#10;README.md - Student name and image" />
     <MESSAGE value="README.md - Customization" />
     <MESSAGE value="First Screens of mobile apps" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Screens of mobile apps" />
+    <MESSAGE value="Setup Navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Navigation" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

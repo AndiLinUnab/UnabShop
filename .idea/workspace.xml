@@ -9,19 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Setup Navigation">
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/NavigationApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/Validations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Login and Register for UnabShop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/HomeScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/LoginScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/LoginScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/RegisterScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/RegisterScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +74,7 @@
     &quot;accountId&quot;: &quot;eaf362ef-4331-42ac-a4f0-75aa6ab3f5d5&quot;
   }
 }</component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\USUARIO\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Android\Android Studio\jbr" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -102,6 +94,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/USUARIO/AndroidStudioProjects/UnabShop/app/src/main/java/me/andilin/unabshop",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
@@ -290,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760540220166</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Login and Register for UnabShop">
+      <option name="closed" value="true" />
+      <created>1761144683347</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761144683347</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +313,8 @@
     <MESSAGE value="README.md - Customization" />
     <MESSAGE value="First Screens of mobile apps" />
     <MESSAGE value="Setup Navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Navigation" />
+    <MESSAGE value="Login and Register for UnabShop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login and Register for UnabShop" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

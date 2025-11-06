@@ -1,4 +1,4 @@
-package me.andilin.unabshop
+package me.andilin.loginandregisterfirebaseauth
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
-import me.andilin.unabshop.Class.Producto
 
 class ProductoViewModel : ViewModel() {
     private val db = Firebase.firestore
@@ -19,12 +18,16 @@ class ProductoViewModel : ViewModel() {
     private val _showDialog = MutableStateFlow(false)
     val showDialog: StateFlow<Boolean> = _showDialog
 
+    private val _isLoading = MutableStateFlow(false)
+    val isLoading: StateFlow<Boolean> = _isLoading
+
     init {
         cargarProductos()
     }
 
     fun cargarProductos() {
         viewModelScope.launch {
+            _isLoading.value = true
             try {
                 val result = db.collection("productos").get().await()
                 val productosList = result.map { doc ->
@@ -33,18 +36,23 @@ class ProductoViewModel : ViewModel() {
                 _productos.value = productosList
             } catch (e: Exception) {
                 // Manejar error
+            } finally {
+                _isLoading.value = false
             }
         }
     }
 
     fun agregarProducto(producto: Producto) {
         viewModelScope.launch {
+            _isLoading.value = true
             try {
                 db.collection("productos").add(producto).await()
                 cargarProductos()
                 _showDialog.value = false
             } catch (e: Exception) {
                 // Manejar error
+            } finally {
+                _isLoading.value = false
             }
         }
     }

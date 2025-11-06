@@ -7,7 +7,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import me.andilin.unabshop.Class.Producto
+import me.andilin.loginandregisterfirebaseauth.Producto
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -18,6 +18,7 @@ fun AddProductoDialog(
     var nombre by remember { mutableStateOf("") }
     var descripcion by remember { mutableStateOf("") }
     var precio by remember { mutableStateOf("") }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
 
     Dialog(onDismissRequest = onDismiss) {
         Card(
@@ -36,11 +37,25 @@ fun AddProductoDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                // Mostrar error si existe
+                errorMessage?.let { message ->
+                    Text(
+                        text = message,
+                        color = MaterialTheme.colorScheme.error,
+                        style = MaterialTheme.typography.bodySmall
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                }
+
                 OutlinedTextField(
                     value = nombre,
-                    onValueChange = { nombre = it },
-                    label = { Text("Nombre") },
-                    modifier = Modifier.fillMaxWidth()
+                    onValueChange = {
+                        nombre = it
+                        errorMessage = null
+                    },
+                    label = { Text("Nombre *") },
+                    modifier = Modifier.fillMaxWidth(),
+                    isError = errorMessage != null
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
@@ -56,7 +71,12 @@ fun AddProductoDialog(
 
                 OutlinedTextField(
                     value = precio,
-                    onValueChange = { precio = it },
+                    onValueChange = {
+                        if (it.isEmpty() || it.matches(Regex("^\\d*(\\.\\d{0,2})?$"))) {
+                            precio = it
+                            errorMessage = null
+                        }
+                    },
                     label = { Text("Precio") },
                     modifier = Modifier.fillMaxWidth(),
                     keyboardOptions = KeyboardOptions.Default.copy(
@@ -78,16 +98,26 @@ fun AddProductoDialog(
 
                     Button(
                         onClick = {
-                            if (nombre.isNotEmpty()) {
-                                val producto = Producto(
-                                    nombre = nombre,
-                                    descripcion = descripcion,
-                                    precio = precio.toDoubleOrNull() ?: 0.0
-                                )
-                                onConfirm(producto)
+                            when {
+                                nombre.isEmpty() -> {
+                                    errorMessage = "El nombre es obligatorio"
+                                }
+                                precio.isNotEmpty() && precio.toDoubleOrNull() == null -> {
+                                    errorMessage = "El precio debe ser un número válido"
+                                }
+                                precio.isNotEmpty() && precio.toDoubleOrNull()!! < 0 -> {
+                                    errorMessage = "El precio no puede ser negativo"
+                                }
+                                else -> {
+                                    val producto = Producto(
+                                        nombre = nombre,
+                                        descripcion = descripcion,
+                                        precio = precio.toDoubleOrNull() ?: 0.0
+                                    )
+                                    onConfirm(producto)
+                                }
                             }
-                        },
-                        enabled = nombre.isNotEmpty()
+                        }
                     ) {
                         Text("Guardar")
                     }

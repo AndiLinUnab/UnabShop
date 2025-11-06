@@ -1,4 +1,4 @@
-package me.andilin.unabshop.Class
+package me.andilin.loginandregisterfirebaseauth
 
 data class Producto(
     val id: String? = null,

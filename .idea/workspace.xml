@@ -9,11 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Crear Viewmodel para gestión de productos">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/AddProductoDialog.kt" afterDir="false" />
+    <list default="true" id="9010d123-54af-431c-af23-d72df997e440" name="Changes" comment="Crear componente Dialog para agregar productos">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/andilin/unabshop/ProductoItem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762460495352</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Crear componente Dialog para agregar productos">
+      <option name="closed" value="true" />
+      <created>1762460688620</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1762460688620</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +341,8 @@
     <MESSAGE value="Login and Register for UnabShop" />
     <MESSAGE value="Crear modelo de datos Producto" />
     <MESSAGE value="Crear Viewmodel para gestión de productos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crear Viewmodel para gestión de productos" />
+    <MESSAGE value="Crear componente Dialog para agregar productos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crear componente Dialog para agregar productos" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
